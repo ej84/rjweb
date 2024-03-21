@@ -1,3 +1,25 @@
+Hello! This is my portfolio website to demonstrate my project works I have accomplished and been working on as a full stack web application developer.
+
+Language: React JS, Tailwind CSS
+
+Web Framework Environment: Next JS
+
+ChangeLog
+
+3/20/2024
+
+- Set up the basic project using npx create-next-app.
+
+- Changed background as blue color and divided sections for introducing title and portfolio.
+
+3/21/2024
+
+- Started to figure out design from small device screen for mobile view. Made all texts aligned to the center on mobile view, or to the left on bigger screens.
+
+- Created "gridset1" CSS class in globals.css file so every div that contains this gets the same CSS style configured in it without having to write over and over again.
+
+- Created openPortfolio function for button "Portfolio" to open or hide portfolio works that I will upload after creating new styles for this section.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

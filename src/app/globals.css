@@ -17,8 +17,12 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
   background-color: rgb(7, 89, 133);
+  color: white;
+}
+
+.gridset1 {
+  padding: 2rem;
 }
 
 @layer utilities {
