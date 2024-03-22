@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, spring } from "framer-motion";
 
 export default function Home() {
   const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
@@ -19,17 +19,21 @@ export default function Home() {
         <div className="gridset1">
           <motion.div
             initial="hidden"
-            animate="visible"
+            animate={{ rotateY: 360, scale: 1, opacity: 1 }}
             variants={{
               hidden: {
-                scale: 0.7,
+                scale: 0,
                 opacity: 0,
               },
               visible: {
                 scale: 1,
                 opacity: 1,
-                transition: 1.0,
               },
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 200,
+              damping: 15,
             }}
           >
             <h1 className="text-xl md:text-4xl">Richard Jeong</h1>
