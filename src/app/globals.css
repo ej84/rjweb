@@ -25,6 +25,13 @@ body {
   padding: 2rem;
 }
 
+.mouseOn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  outline-style: solid;
+  outline-color: yellow;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

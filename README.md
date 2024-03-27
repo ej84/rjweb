@@ -24,6 +24,9 @@ ChangeLog
 
 - Added mouse hovering effect which changes the Portfolio button's background color to gray. Tested few shadow background color effect for title then removed.
 
+3/27/2024
+
+- In globals.css script, added .onMouse selector for mouse hovering effect like changing outline color, background color, and so on.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
