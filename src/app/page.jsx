@@ -41,7 +41,7 @@ export default function Home() {
           <h2 className="text-base md:text-2xl">Full Stack Web Developer</h2>
         </div>
         <div className="gridset1">
-          <button onClick={() => openPortfolio()}>
+          <button onClick={() => openPortfolio()} className="p-3 hover:bg-gray-700">
             {/*<h1 className="text-xl md:text-4xl">Projects</h1>*/}
             <h1 className="text-xl md:text-4xl">Portfolio</h1>
           </button>

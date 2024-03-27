@@ -20,6 +20,11 @@ ChangeLog
 
 - Created openPortfolio function for button "Portfolio" to open or hide portfolio works that I will upload after creating new styles for this section.
 
+3/26/2024
+
+- Added mouse hovering effect which changes the Portfolio button's background color to gray. Tested few shadow background color effect for title then removed.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
