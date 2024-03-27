@@ -46,12 +46,12 @@ export default function Home() {
             {/*<h1 className="text-xl md:text-4xl">Projects</h1>*/}
             <h1 className="text-xl md:text-4xl">Portfolio</h1>
           </button>
-          {isPortfolioOpen && <div className="grid grid-cols-4">
-            <div>
-              <a href="https://dev.getgeneid.com">PHP, javascript, and MySQL Full Stack Web Application for GetGeneID</a>
-            </div>
-          </div>}
         </div>
+        {isPortfolioOpen && <div className="grid grid-cols-4">
+          <div className="p-5 outline outline-white rounded-md">
+            <a href="https://dev.getgeneid.com">PHP, javascript, and MySQL Full Stack Web Application for GetGeneID</a>
+          </div>
+        </div>}
       </div>
     </main>
   );
