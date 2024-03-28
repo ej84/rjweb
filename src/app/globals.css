@@ -25,7 +25,8 @@ body {
   padding: 2rem;
 }
 
-.mouseOn:hover {
+.mouseOn:hover,
+.mouseOn:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
   outline-style: solid;

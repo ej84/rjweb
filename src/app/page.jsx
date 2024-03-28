@@ -32,8 +32,8 @@ export default function Home() {
           </button>
         </div>
         {isPortfolioOpen && (
-          <motion.div animate={{ translateY: 70.0 }} style={{ y: -35 }}>
-            <div className="grid grid-cols-4">
+          <div className="grid grid-cols-4">
+            <motion.div animate={{ translateY: 70.0 }} style={{ y: -35 }}>
               <div className="outline outline-white rounded-md mouseOn">
                 <a href="https://dev.getgeneid.com">
                   <p className="w-full h-full p-5">
@@ -42,8 +42,8 @@ export default function Home() {
                   </p>
                 </a>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         )}
       </div>
     </main>
