@@ -5,13 +5,15 @@ import Link from "next/link";
 
 export default function Home() {
   const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
+  const [isclicked, setIsClicked] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
+
+  const buttonHovering = () => {
+    setIsHovering(!isHovering);
+  };
 
   const openPortfolio = () => {
-    if (!isPortfolioOpen) {
-      setIsPortfolioOpen(true);
-    } else {
-      setIsPortfolioOpen(false);
-    }
+    setIsPortfolioOpen(!isPortfolioOpen);
   };
 
   return (
@@ -24,11 +26,15 @@ export default function Home() {
         </div>
         <div className="gridset1">
           <button
+            onMouseEnter={() => buttonHovering()}
             onClick={() => openPortfolio()}
-            className="p-3 outline outline-white rounded-md mouseOn"
+            className={`p-3 outline outline-white rounded-md
+            ${isHovering ? "mouseOn" : ""} ${
+              isPortfolioOpen ? "btnClicked" : ""
+            }`}
           >
             {/*<h1 className="text-xl md:text-4xl">Projects</h1>*/}
-            <h1 className="text-xl md:text-4xl">My Projects</h1>
+            <h1 className="text-xl md:text-4xl w-full h-full">My Projects</h1>
           </button>
         </div>
         {isPortfolioOpen && (
@@ -39,6 +45,18 @@ export default function Home() {
                   <p className="w-full h-full p-5">
                     PHP, javascript, and MySQL Full Stack Web Application for
                     GetGeneID
+                  </p>
+                </a>
+              </div>
+            </motion.div>
+            <motion.div
+              animate={{ translateX: 50, translateY: 70 }}
+              style={{ y: -35 }}
+            >
+              <div className="outline outline-white rounded-md mouseOn">
+                <a href="https://dev.getgeneid.com">
+                  <p className="w-full h-full p-5">
+                    React JS AI Image Generator Integrated Web Application
                   </p>
                 </a>
               </div>

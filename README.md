@@ -28,6 +28,10 @@ ChangeLog
 
 - In globals.css script, added .onMouse selector for mouse hovering effect like changing outline color, background color, and so on.
 
+3/29/2024
+
+- Added new button click and mouse hovering consts to manage their states more dynamically for buttons styles. Defined two CSS selectors named mouseOn:hover for hovering and btnClick for clicking with the same styles of each buttons.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
