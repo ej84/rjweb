@@ -21,10 +21,6 @@ body {
   color: white;
 }
 
-.gridset1 {
-  padding: 2rem;
-}
-
 .mouseOn:hover,
 .btnClicked {
   --tw-bg-opacity: 1;
