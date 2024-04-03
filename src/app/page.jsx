@@ -7,8 +7,11 @@ import {
   faGithub,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import Link from "next/link";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { useMediaQuery } from "react-responsive";
+import Link from "next/link";
+
+
 
 export default function Home() {
   const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
@@ -60,30 +63,28 @@ export default function Home() {
             onMouseEnter={() => buttonHovering()}
             onClick={() => openPortfolio()}
             className={`p-3 outline outline-white rounded-md
-            ${isHovering ? "mouseOn" : ""} ${
-              isPortfolioOpen ? "btnClicked" : ""
-            }`}
+            ${isHovering ? "mouseOn" : ""} ${isPortfolioOpen ? "btnClicked" : ""
+              }`}
           >
-            {/*<h1 className="text-xl md:text-4xl">Projects</h1>*/}
             <h1 className="text-xl md:text-4xl w-full h-full">My Projects</h1>
           </button>
         </div>
         {isPortfolioOpen && (
           <div className="grid grid-cols-4">
-            <motion.div animate={{ translateY: 70.0 }} style={{ y: -35 }}>
-              <div className="outline outline-white rounded-md mouseOn">
-                <a href="https://dev.getgeneid.com">
-                  <p className="w-full h-full p-5">Project 1</p>
+            <motion.div animate={{ translateY: 40.0 }} style={{ y: -150 }}>
+              <div className="outline outline-white flex justify-center rounded-md mouseOn">
+                <a href="https://dev.getgeneid.com" className="w-full h-full">
+                  <p className="p-5">Project 1</p>
                 </a>
               </div>
             </motion.div>
             <motion.div
-              animate={{ translateX: 50, translateY: 70 }}
-              style={{ y: -35 }}
+              animate={{ translateX: 75, translateY: 40.0 }}
+              style={{ y: -150 }}
             >
-              <div className="outline outline-white rounded-md mouseOn">
-                <a href="https://dev.getgeneid.com">
-                  <p className="w-full h-full p-5">Project 2</p>
+              <div className="outline outline-white flex justify-center rounded-md mouseOn max-[640px]:text-center">
+                <a href="https://dev.getgeneid.com" className="w-full h-full">
+                  <p className="p-5">Project 2</p>
                 </a>
               </div>
             </motion.div>
