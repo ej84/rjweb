@@ -32,6 +32,12 @@ ChangeLog
 
 - Added new button click and mouse hovering consts to manage their states more dynamically for buttons styles. Defined two CSS selectors named mouseOn:hover for hovering and btnClick for clicking with the same styles of each buttons.
 
+4/03/2024
+
+- Made new consts named notLg with useMedeaQuery and useState json array styles for animate and style for motion div. With customized max-width indicating small or medium size screen, the animate for translation and style for final position (x, y) should have different definition and behavior to make the effects look much more like it depending on the dimension sizes. By using const function, learned how to do it conveniently and flexibly in React JS.
+
+- Added new element in ul and li elements to display personal social media and website links, horizontally on smartphone or tablet size or vertically on desktop or bigger size.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
