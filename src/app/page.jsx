@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useMediaQuery } from "@mui/material";
 import { motion, spring } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,23 +9,46 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { useMediaQuery } from "react-responsive";
 import Link from "next/link";
-
-
 
 export default function Home() {
   const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
   const [isclicked, setIsClicked] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
+  const notLg = useMediaQuery("(max-width:767px)");
+  const [animateStyle, setAnimateStyle] = useState({});
+  const [style, setStyle] = useState({});
 
+  // Switches hovering status on/off
   const buttonHovering = () => {
     setIsHovering(!isHovering);
   };
 
+  // Switches portfolio open on/off
   const openPortfolio = () => {
     setIsPortfolioOpen(!isPortfolioOpen);
   };
+
+  // Updates style depending on device dimension
+  useEffect(() => {
+    // Sets animate style responsively
+    const animated = () => {
+      if (notLg) {
+        setAnimateStyle({
+          1: { translateX: -70, translateY: 40.0 },
+          2: { translateY: 40.0 },
+        });
+        setStyle({ 1: { x: 100, y: -150 }, 2: { x: 55, y: -150 } });
+      } else {
+        setAnimateStyle({
+          1: { translateY: 40.0 },
+          2: { translateX: 75, translateY: 40.0 },
+        });
+        setStyle({ 1: { x: 20, y: -150 }, 2: { y: -150 } });
+      }
+    };
+    animated();
+  }, [notLg]);
 
   return (
     <main className="flex min-h-screen flex-col justify-between p-5">
@@ -41,12 +65,20 @@ export default function Home() {
               <ul className="text-center max-[640px]:flex max-[640px]:justify-center max-[640px]:text-xs max-[640px]:space-x-3 md:space-y-3">
                 <li>
                   <Link href="https://www.linkedin.com/in/rjeong397/">
-                    <FontAwesomeIcon icon={faLinkedin} size="3x" />
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      size="3x"
+                      className="hover:text-blue-700"
+                    />
                   </Link>
                 </li>
                 <li>
                   <Link href="https://www.github.com/ej84">
-                    <FontAwesomeIcon icon={faGithub} size="3x" />
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      size="3x"
+                      className="hover:bg-black"
+                    />
                   </Link>
                 </li>
                 <li>
@@ -63,25 +95,26 @@ export default function Home() {
             onMouseEnter={() => buttonHovering()}
             onClick={() => openPortfolio()}
             className={`p-3 outline outline-white rounded-md
-            ${isHovering ? "mouseOn" : ""} ${isPortfolioOpen ? "btnClicked" : ""
-              }`}
+            ${isHovering ? "mouseOn" : ""} ${
+              isPortfolioOpen ? "btnClicked" : ""
+            }`}
           >
             <h1 className="text-xl md:text-4xl w-full h-full">My Projects</h1>
           </button>
         </div>
         {isPortfolioOpen && (
           <div className="grid grid-cols-4">
-            <motion.div animate={{ translateY: 40.0 }} style={{ y: -150 }}>
+            <motion.div
+              animate={animateStyle["1"]}
+              /*{{ translateY: 40.0 }}*/ style={style["1"]}
+            >
               <div className="outline outline-white flex justify-center rounded-md mouseOn">
                 <a href="https://dev.getgeneid.com" className="w-full h-full">
                   <p className="p-5">Project 1</p>
                 </a>
               </div>
             </motion.div>
-            <motion.div
-              animate={{ translateX: 75, translateY: 40.0 }}
-              style={{ y: -150 }}
-            >
+            <motion.div animate={animateStyle["2"]} style={style["2"]}>
               <div className="outline outline-white flex justify-center rounded-md mouseOn max-[640px]:text-center">
                 <a href="https://dev.getgeneid.com" className="w-full h-full">
                   <p className="p-5">Project 2</p>
