@@ -77,7 +77,7 @@ export default function Home() {
                     <FontAwesomeIcon
                       icon={faGithub}
                       size="3x"
-                      className="hover:bg-black"
+                      className="hover:bg-white hover:text-black"
                     />
                   </Link>
                 </li>
@@ -95,18 +95,16 @@ export default function Home() {
             onMouseEnter={() => buttonHovering()}
             onClick={() => openPortfolio()}
             className={`p-3 outline outline-white rounded-md
-            ${isHovering ? "mouseOn" : ""} ${isPortfolioOpen ? "btnClicked" : ""
-              }`}
+            ${isHovering ? "mouseOn" : ""} ${
+              isPortfolioOpen ? "btnClicked" : ""
+            }`}
           >
             <h1 className="text-xl md:text-4xl w-full h-full">My Projects</h1>
           </button>
         </div>
         {isPortfolioOpen && (
           <div className="grid grid-cols-4">
-            <motion.div
-              animate={animateStyle["1"]}
-              style={style["1"]}
-            >
+            <motion.div animate={animateStyle["1"]} style={style["1"]}>
               <div className="outline outline-white flex justify-center rounded-md mouseOn">
                 <a href="https://dev.getgeneid.com" className="w-full h-full">
                   <p className="p-5">Project 1</p>
