@@ -41,10 +41,10 @@ export default function Home() {
         setStyle({ 1: { x: 100, y: -150 }, 2: { x: 55, y: -150 } });
       } else {
         setAnimateStyle({
-          1: { translateY: 40.0 },
-          2: { translateX: 75, translateY: 40.0 },
+          1: { translateY: 70.0 },
+          2: { translateX: 75, translateY: 70.0 },
         });
-        setStyle({ 1: { x: 20, y: -150 }, 2: { y: -150 } });
+        setStyle({ 1: { x: 20, y: -110 }, 2: { y: -110 } });
       }
     };
     animated();
@@ -68,7 +68,7 @@ export default function Home() {
                     <FontAwesomeIcon
                       icon={faLinkedin}
                       size="3x"
-                      className="hover:text-blue-700"
+                      className="hover:bg-white hover:text-blue-700"
                     />
                   </Link>
                 </li>
@@ -79,11 +79,6 @@ export default function Home() {
                       size="3x"
                       className="hover:bg-white hover:text-black"
                     />
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/">
-                    <FontAwesomeIcon icon={faYoutube} size="3x" />
                   </Link>
                 </li>
               </ul>
@@ -106,18 +101,34 @@ export default function Home() {
           <div className="grid grid-cols-4">
             <motion.div animate={animateStyle["1"]} style={style["1"]}>
               <div className="outline outline-white flex justify-center rounded-md mouseOn">
-                <a href="https://dev.getgeneid.com" className="w-full h-full">
-                  <p className="p-5">Project 1</p>
-                </a>
+                <button
+                  onClick={() => setIsClicked(true)}
+                  className="p-5 w-full h-full"
+                >
+                  Project 1
+                </button>
               </div>
             </motion.div>
             <motion.div animate={animateStyle["2"]} style={style["2"]}>
               <div className="outline outline-white flex justify-center rounded-md mouseOn max-[640px]:text-center">
-                <a href="https://dev.getgeneid.com" className="w-full h-full">
+                <a
+                  href="https://github.com/ej84/ithelpdesk"
+                  className="w-full h-full"
+                >
                   <p className="p-5">Project 2</p>
                 </a>
               </div>
             </motion.div>
+          </div>
+        )}
+        {isclicked && (
+          <div
+            className="flex justify-center p-20 m-20 bg-gray-300"
+            onClick={() => setIsClicked(false)}
+          >
+            <a href="https://dev.getgeneid.com" className="w-full h-full">
+              project
+            </a>
           </div>
         )}
       </div>
