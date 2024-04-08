@@ -73,7 +73,7 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.github.com/ej84">
+                  <Link href="https://github.com/ej84/ithelpdesk">
                     <FontAwesomeIcon
                       icon={faGithub}
                       size="3x"
