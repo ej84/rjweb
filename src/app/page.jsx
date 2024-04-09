@@ -27,6 +27,14 @@ export default function Home() {
   // Switches portfolio open on/off
   const openPortfolio = () => {
     setIsPortfolioOpen(!isPortfolioOpen);
+    if (isclicked) {
+      setIsClicked(false);
+    }
+  };
+
+  // Opens a project detail page modal by click
+  const openProjectDetail = () => {
+    setIsClicked(!isclicked);
   };
 
   // Updates style depending on device dimension
@@ -37,14 +45,24 @@ export default function Home() {
         setAnimateStyle({
           1: { translateX: -70, translateY: 40.0 },
           2: { translateY: 40.0 },
+          3: { translateX: 70, translateY: 40.0 },
         });
-        setStyle({ 1: { x: 100, y: -150 }, 2: { x: 55, y: -150 } });
+        setStyle({
+          1: { x: 100, y: -150 },
+          2: { x: 55, y: -150 },
+          3: { x: 20, y: -150 },
+        });
       } else {
         setAnimateStyle({
           1: { translateY: 70.0 },
           2: { translateX: 75, translateY: 70.0 },
+          3: { translateX: 100, translateY: 70.0 },
         });
-        setStyle({ 1: { x: 20, y: -110 }, 2: { y: -110 } });
+        setStyle({
+          1: { x: 20, y: -110 },
+          2: { x: 10, y: -110 },
+          3: { x: 50, y: -110 },
+        });
       }
     };
     animated();
@@ -73,7 +91,7 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://github.com/ej84/ithelpdesk">
+                  <Link href="https://github.com/ej84/">
                     <FontAwesomeIcon
                       icon={faGithub}
                       size="3x"
@@ -102,7 +120,7 @@ export default function Home() {
             <motion.div animate={animateStyle["1"]} style={style["1"]}>
               <div className="outline outline-white flex justify-center rounded-md mouseOn">
                 <button
-                  onClick={() => setIsClicked(true)}
+                  onClick={() => openProjectDetail()}
                   className="p-5 w-full h-full"
                 >
                   Project 1
@@ -110,25 +128,61 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div animate={animateStyle["2"]} style={style["2"]}>
-              <div className="outline outline-white flex justify-center rounded-md mouseOn max-[640px]:text-center">
-                <a
-                  href="https://github.com/ej84/ithelpdesk"
-                  className="w-full h-full"
+              <div className="outline outline-white flex justify-center rounded-md mouseOn">
+                <button
+                  onClick={() => openProjectDetail()}
+                  className="p-5 w-full h-full"
                 >
-                  <p className="p-5">Project 2</p>
-                </a>
+                  Project 2
+                </button>
+              </div>
+            </motion.div>
+            <motion.div animate={animateStyle["3"]} style={style["3"]}>
+              <div className="outline outline-white flex justify-center rounded-md mouseOn">
+                <button
+                  onClick={() => openProjectDetail()}
+                  className="p-5 w-full h-full"
+                >
+                  Project 3
+                </button>
               </div>
             </motion.div>
           </div>
         )}
-        {isclicked && (
-          <div
-            className="flex justify-center p-20 m-20 bg-gray-300"
-            onClick={() => setIsClicked(false)}
-          >
-            <a href="https://dev.getgeneid.com" className="w-full h-full">
-              project
-            </a>
+        {isPortfolioOpen && isclicked && (
+          <div className="justify-center bg-white inset-1/2 text-black text-center">
+            <div className="p-5 m-3">
+              <h1 className="text-xl">
+                Full Stack Web Developer (09/2022 – Current) - GeneID Advanced
+                Molecular Diagnostics
+              </h1>
+            </div>
+            <div className="p-2 m-2">
+              <ul className="space-y-5 text-start">
+                <li>
+                  • Architected & implemented a PHP/MySQL health-care services
+                  web platform, seamlessly centralizing patient, insurance, and
+                  health care provider data.
+                </li>
+                <li>
+                  • Collaboration & Individual Contribution: Seamlessly
+                  coordinated with my team member, balancing works and
+                  leveraging individual strengths to enhance performance and
+                  user experience.
+                </li>
+                <li>
+                  • Facilitated a more efficient and error-free workflow for lab
+                  employees and researchers, significantly reducing manual data
+                  handling and improving the accuracy of patient records and
+                  eligibility assessments.
+                </li>
+              </ul>
+            </div>
+            <div className="p-5 m-5">
+              <a href="https://dev.getgeneid.com" className="text-black">
+                Link to Project 1
+              </a>
+            </div>
           </div>
         )}
       </div>
