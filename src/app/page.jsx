@@ -170,9 +170,10 @@ export default function Home() {
                 <div className="p-2 m-2">
                   <ul className="space-y-3">
                     <li>
-                      - Architected & implemented a PHP/MySQL health-care
-                      services web platform, seamlessly centralizing patient,
-                      insurance, and health care provider data.
+                      - This project is architected & implemented using a
+                      PHP/MySQL to provide health-care services web platform,
+                      seamlessly centralizing patient, insurance, and health
+                      care provider data.
                     </li>
                     <li>
                       - Collaboration & Individual Contribution: Seamlessly
@@ -199,8 +200,20 @@ export default function Home() {
                 </div>
               </>
             )}
-            {projectNumber === 2 && <div>Project 2</div>}
-            {projectNumber === 3 && <div>Project 3</div>}
+            {projectNumber === 2 && (
+              <div>
+                <a href="https://github.com/ej84/ithelpdesk">
+                  Link to Next JS Helpdesk Web App Project
+                </a>
+              </div>
+            )}
+            {projectNumber === 3 && (
+              <div>
+                <a href="https://github.com/ej84/">
+                  Link to Next JS AI Image Generator Web App Project
+                </a>
+              </div>
+            )}
           </div>
         )}
       </div>
