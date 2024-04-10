@@ -18,6 +18,7 @@ export default function Home() {
   const notLg = useMediaQuery("(max-width:767px)");
   const [animateStyle, setAnimateStyle] = useState({});
   const [style, setStyle] = useState({});
+  const [projectNumber, setProjectNumber] = useState(0);
 
   // Switches hovering status on/off
   const buttonHovering = () => {
@@ -28,12 +29,14 @@ export default function Home() {
   const openPortfolio = () => {
     setIsPortfolioOpen(!isPortfolioOpen);
     if (isclicked) {
+      setProjectNumber(0);
       setIsClicked(false);
     }
   };
 
   // Opens a project detail page modal by click
-  const openProjectDetail = () => {
+  const openProjectDetail = (number) => {
+    setProjectNumber(number);
     setIsClicked(!isclicked);
   };
 
@@ -83,20 +86,12 @@ export default function Home() {
               <ul className="text-center max-[640px]:flex max-[640px]:justify-center max-[640px]:text-xs max-[640px]:space-x-3 md:space-y-3">
                 <li>
                   <Link href="https://www.linkedin.com/in/rjeong397/">
-                    <FontAwesomeIcon
-                      icon={faLinkedin}
-                      size="3x"
-                      className="hover:bg-white hover:text-blue-700"
-                    />
+                    <FontAwesomeIcon icon={faLinkedin} size="3x" />
                   </Link>
                 </li>
                 <li>
                   <Link href="https://github.com/ej84/">
-                    <FontAwesomeIcon
-                      icon={faGithub}
-                      size="3x"
-                      className="hover:bg-white hover:text-black"
-                    />
+                    <FontAwesomeIcon icon={faGithub} size="3x" />
                   </Link>
                 </li>
               </ul>
@@ -118,9 +113,14 @@ export default function Home() {
         {isPortfolioOpen && (
           <div className="grid grid-cols-4">
             <motion.div animate={animateStyle["1"]} style={style["1"]}>
-              <div className="outline outline-white flex justify-center rounded-md mouseOn">
+              <div
+                className={`outline outline-white flex justify-center rounded-md ${
+                  isHovering ? "mouseOn" : ""
+                } ${isclicked && projectNumber === 1 ? "btnClicked" : ""}`}
+              >
                 <button
-                  onClick={() => openProjectDetail()}
+                  onMouseEnter={() => buttonHovering()}
+                  onClick={() => openProjectDetail(1)}
                   className="p-5 w-full h-full"
                 >
                   Project 1
@@ -128,9 +128,13 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div animate={animateStyle["2"]} style={style["2"]}>
-              <div className="outline outline-white flex justify-center rounded-md mouseOn">
+              <div
+                className={`outline outline-white flex justify-center rounded-md ${
+                  isHovering ? "mouseOn" : ""
+                } ${isclicked && projectNumber === 2 ? "btnClicked" : ""}`}
+              >
                 <button
-                  onClick={() => openProjectDetail()}
+                  onClick={() => openProjectDetail(2)}
                   className="p-5 w-full h-full"
                 >
                   Project 2
@@ -138,9 +142,13 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div animate={animateStyle["3"]} style={style["3"]}>
-              <div className="outline outline-white flex justify-center rounded-md mouseOn">
+              <div
+                className={`outline outline-white flex justify-center rounded-md ${
+                  isHovering ? "mouseOn" : ""
+                } ${isclicked && projectNumber === 3 ? "btnClicked" : ""}`}
+              >
                 <button
-                  onClick={() => openProjectDetail()}
+                  onClick={() => openProjectDetail(3)}
                   className="p-5 w-full h-full"
                 >
                   Project 3
@@ -149,40 +157,50 @@ export default function Home() {
             </motion.div>
           </div>
         )}
-        {isPortfolioOpen && isclicked && (
-          <div className="justify-center bg-white inset-1/2 text-black text-center">
-            <div className="p-5 m-3">
-              <h1 className="text-xl">
-                Full Stack Web Developer (09/2022 – Current) - GeneID Advanced
-                Molecular Diagnostics
-              </h1>
-            </div>
-            <div className="p-2 m-2">
-              <ul className="space-y-5 text-start">
-                <li>
-                  • Architected & implemented a PHP/MySQL health-care services
-                  web platform, seamlessly centralizing patient, insurance, and
-                  health care provider data.
-                </li>
-                <li>
-                  • Collaboration & Individual Contribution: Seamlessly
-                  coordinated with my team member, balancing works and
-                  leveraging individual strengths to enhance performance and
-                  user experience.
-                </li>
-                <li>
-                  • Facilitated a more efficient and error-free workflow for lab
-                  employees and researchers, significantly reducing manual data
-                  handling and improving the accuracy of patient records and
-                  eligibility assessments.
-                </li>
-              </ul>
-            </div>
-            <div className="p-5 m-5">
-              <a href="https://dev.getgeneid.com" className="text-black">
-                Link to Project 1
-              </a>
-            </div>
+        {isclicked && (
+          <div className="justify-center bg-gray-700 inset-1/2 text-center rounded-lg">
+            {projectNumber === 1 && (
+              <>
+                <div className="p-5 m-3 portfolioText">
+                  <h1 className="text-xl">
+                    GetGeneID Full Stack Website for GeneID Advanced Molecular
+                    Diagnostics
+                  </h1>
+                </div>
+                <div className="p-2 m-2">
+                  <ul className="space-y-3">
+                    <li>
+                      - Architected & implemented a PHP/MySQL health-care
+                      services web platform, seamlessly centralizing patient,
+                      insurance, and health care provider data.
+                    </li>
+                    <li>
+                      - Collaboration & Individual Contribution: Seamlessly
+                      coordinated with my team member, balancing works and
+                      leveraging individual strengths to enhance performance and
+                      user experience.
+                    </li>
+                    <li>
+                      - Facilitated a more efficient and error-free workflow for
+                      lab employees and researchers, significantly reducing
+                      manual data handling and improving the accuracy of patient
+                      records and eligibility assessments.
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex flex-col p-5 m-5 portfolioText">
+                  <a href="https://dev.getgeneid.com">
+                    Link to the project website
+                  </a>
+                  <span>
+                    * Please log in using username "Richard" and password
+                    "RiJe@136!"
+                  </span>
+                </div>
+              </>
+            )}
+            {projectNumber === 2 && <div>Project 2</div>}
+            {projectNumber === 3 && <div>Project 3</div>}
           </div>
         )}
       </div>

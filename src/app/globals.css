@@ -29,6 +29,10 @@ body {
   outline-color: yellow;
 }
 
+.portfolioText {
+  color: yellow;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
