@@ -201,15 +201,21 @@ export default function Home() {
               </>
             )}
             {projectNumber === 2 && (
-              <div>
-                <a href="https://github.com/ej84/ithelpdesk">
-                  Link to Next JS Helpdesk Web App Project
+              <div className="p-10 rounded-full">
+                <a
+                  href="https://github.com/ej84/nextxc"
+                  className="p-5 bg-yellow-500 rounded-full"
+                >
+                  Link to Next JS Twitter X Clone Project
                 </a>
               </div>
             )}
             {projectNumber === 3 && (
-              <div>
-                <a href="https://github.com/ej84/">
+              <div className="p-10 rounded-full">
+                <a
+                  href="https://github.com/ej84/"
+                  className="p-5 bg-yellow-500 rounded-full"
+                >
                   Link to Next JS AI Image Generator Web App Project
                 </a>
               </div>
