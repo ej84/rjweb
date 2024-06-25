@@ -27,28 +27,20 @@ body {
 }
 
 .moving {
-  animation: moving 4s ease-in-out;
+  animation: moving 2s infinite ease-in-out;
 }
 
 @keyframes moving {
   0% {
-    right: 500px;
-  }
-
-  25% {
-    right: 700px;
+    left: 0%;
   }
 
   50% {
-    opacity: 0;
-  }
-
-  75% {
-    left: 500px;
+    left: 50%;
   }
 
   100% {
-    left: 800px;
+    right: 0%;
   }
 }
 

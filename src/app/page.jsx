@@ -35,13 +35,7 @@ export default function Home() {
           <h1 className="text-3xl lg:text-4xl fade-in">Hello, I'm Richard.</h1>
         </div>
         <div className="flex justify-center p-3">
-          <Image
-            src={main}
-            alt="main"
-            width="300"
-            height="300"
-            className="relative"
-          />
+          <Image src={main} alt="main" width="300" height="300" />
         </div>
         <div className="p-5 mt-2 text-center">
           <h2 className="text-lg lg:text-2xl">
