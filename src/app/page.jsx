@@ -28,23 +28,21 @@ export default function Home() {
           LinkedIn
         </Link>
       </nav>
-      <main className="flex min-h-screen flex-col justify-center p-5">
-        <div className="p-5 text-center">
-          <h1 className="text-3xl lg:text-5xl fade-in">
-            Hello, I'm Richard.
-            <span className="text-lg block lg:text-2xl">
-              I Develop and Design Full Stack Website.
-            </span>
-          </h1>
+      <main className="flex min-h-screen flex-col justify-center lg:p-14">
+        <div className="pb-10 text-center space-y-3">
+          <h1 className="text-3xl lg:text-4xl fade-in">Hello I'm Richard,</h1>
+          <h2 className="text-lg block lg:text-2xl">
+            Full Stack Web Developer and Designer.
+          </h2>
         </div>
         <div className="px-10 my-10 lg:px-48 flex justify-between text-center">
           <button className="p-3 m-2">
-            <a href="/" className="text-xl">
+            <a href="/" className="text-2xl">
               About Me
             </a>
           </button>
           <button className="p-3 m-2">
-            <Link href="https://www.github.com/ej84" className="text-xl">
+            <Link href="https://www.github.com/ej84" className="text-2xl">
               Projects
             </Link>
           </button>
