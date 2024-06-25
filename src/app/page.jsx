@@ -14,10 +14,19 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <nav className="flex justify-center p-5">
-        <Link href="https://www.github.com/ej84">Link 1</Link>
-        <Link href="https://www.github.com/ej84">Link 2</Link>
-        <Link href="https://www.github.com/ej84">Link 3</Link>
+      <nav className="flex justify-end">
+        <Link href="https://www.github.com/ej84" className="pr-5 my-5">
+          Resume
+        </Link>
+        <Link href="https://www.github.com/ej84" className="pr-5 my-5">
+          Github
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/rjeong397/"
+          className="pr-5 my-5"
+        >
+          LinkedIn
+        </Link>
       </nav>
       <main className="flex min-h-screen flex-col justify-center p-5">
         <div className="p-5 text-center">
