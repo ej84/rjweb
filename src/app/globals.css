@@ -55,6 +55,7 @@ body {
 
 @keyframes toLeft {
   from {
+    display: block;
     opacity: 1;
     right: -15%;
   }
@@ -68,6 +69,7 @@ body {
 
 @keyframes toRight {
   from {
+    display: block;
     opacity: 1;
     left: -15%;
   }
