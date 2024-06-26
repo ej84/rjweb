@@ -30,30 +30,30 @@ export default function Home() {
           LinkedIn
         </Link>
       </nav>
-      <main className="flex min-h-screen flex-col justify-center lg:p-14">
-        <div className="p-5 mb-2 text-center">
-          <h1 className="text-3xl lg:text-4xl fade-in">Hello, I'm Richard.</h1>
+      <main className="flex flex-col justify-center lg:p-14">
+        <div className="p-4 m-3 text-center md:text-start">
+          <h1 className="text-3xl lg:text-5xl font-extrabold fade-in">
+            Hello World, My name is Richard.
+          </h1>
         </div>
+        {/*
         <div className="flex justify-center p-3">
           <Image src={main} alt="main" width="300" height="300" />
-        </div>
-        <div className="p-5 mt-2 text-center">
-          <h2 className="text-lg lg:text-2xl">
-            Full Stack Web Developer and Designer.
+  </div>*/}
+        <div className="p-3 m-2 text-center md:text-start">
+          <h2 className="text-lg font-bold lg:text-2xl fade-in_2">
+            I am a Full Stack Web Developer{" "}
+            <span className="lg:text-orange-500">and Designer.</span>
           </h2>
         </div>
-        <div className="px-10 my-10 lg:px-48 lg:my-8 flex justify-between text-center">
-          <button className="p-3 m-2">
+        <div className="px-10 lg:px-48 lg:my-5 flex justify-between text-center">
+          <button className="p-3 m-2 outline outline-emerald-500 rounded-lg relative bg-lime-500 to-right">
             <a href="/" className="text-2xl">
               About Me
             </a>
           </button>
-          <div className="hidden lg:flex lg:space-x-4">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-          </div>
-          <button className="p-3 m-2">
+
+          <button className="p-3 m-2 outline outline-fuchsia-800 rounded-lg relative bg-indigo-700 to-left">
             <Link href="https://www.github.com/ej84" className="text-2xl">
               Projects
             </Link>
