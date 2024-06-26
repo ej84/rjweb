@@ -43,11 +43,13 @@ body {
 
 .to-left {
   opacity: 0;
+  display: none;
   animation: toLeft 0.8s 2s linear forwards;
 }
 
 .to-right {
   opacity: 0;
+  display: none;
   animation: toRight 0.8s 2s linear forwards;
 }
 
@@ -58,6 +60,7 @@ body {
   }
 
   to {
+    display: block;
     opacity: 1;
     right: 0;
   }
@@ -70,6 +73,7 @@ body {
   }
 
   to {
+    display: block;
     opacity: 1;
     left: 0;
   }
