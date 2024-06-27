@@ -19,6 +19,9 @@
 body {
   /*background-color: rgb(7, 89, 133);*/
   background-image: url("image/main.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: white;
 }
 
@@ -42,45 +45,51 @@ body {
 }
 
 .to-left {
+  visibility: hidden;
   opacity: 0;
-  display: none;
-  animation: toLeft 0.8s 2s linear forwards;
+  animation: toLeft 0.5s 2.5s linear forwards;
 }
 
 .to-right {
+  visibility: hidden;
   opacity: 0;
-  display: none;
-  animation: toRight 0.8s 2s linear forwards;
+  animation: toRight 0.5s 2.5s linear forwards;
 }
 
 @keyframes toLeft {
-  from {
-    display: block;
-    opacity: 1;
+  0% {
+    visibility: hidden;
+    opacity: 0;
     right: -15%;
   }
-
-  to {
-    display: block;
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
     opacity: 1;
     right: 0;
   }
 }
 
 @keyframes toRight {
-  from {
-    display: block;
-    opacity: 1;
+  0% {
+    visibility: hidden;
+    opacity: 0;
     left: -15%;
   }
-
-  to {
-    display: block;
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
     opacity: 1;
     left: 0;
   }
 }
-
+/*
 .mouseOn:hover,
 .btnClicked {
   --tw-bg-opacity: 1;
@@ -92,7 +101,7 @@ body {
 .portfolioText {
   color: yellow;
 }
-
+*/
 @layer utilities {
   .text-balance {
     text-wrap: balance;

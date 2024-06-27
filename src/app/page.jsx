@@ -41,9 +41,11 @@ export default function Home() {
           <Image src={main} alt="main" width="300" height="300" />
   </div>*/}
         <div className="p-3 m-2 text-center md:text-start">
-          <h2 className="text-lg font-bold lg:text-2xl fade-in_2">
-            I am a Full Stack Web Developer{" "}
-            <span className="lg:text-orange-500">and Designer.</span>
+          <h2 className="text-lg font-bold lg:text-3xl fade-in_2">
+            I'm a{" "}
+            <span className="lg:text-orange-600">Full Stack Web Developer</span>{" "}
+            and
+            <span className="lg:text-violet-900"> Designer.</span>
           </h2>
         </div>
         <div className="px-10 lg:px-48 lg:my-5 flex justify-between text-center">
