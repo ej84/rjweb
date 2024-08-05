@@ -12,24 +12,12 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 import main from "./image/main.png";
+import Nav from "./components/Nav";
 
 export default function Home() {
   return (
     <>
-      <nav className="flex justify-end p-2">
-        <Link href="https://www.github.com/ej84" className="pr-5 my-5">
-          Resume
-        </Link>
-        <Link href="https://www.github.com/ej84" className="pr-5 my-5">
-          Github
-        </Link>
-        <Link
-          href="https://www.linkedin.com/in/rjeong397/"
-          className="pr-5 my-5"
-        >
-          LinkedIn
-        </Link>
-      </nav>
+      <Nav />
       <main className="flex flex-col justify-center lg:p-14">
         <div className="p-4 m-3 text-center md:text-start">
           <h1 className="text-3xl lg:text-5xl font-extrabold fade-in">
@@ -49,7 +37,7 @@ export default function Home() {
         </div>
         <div className="px-10 lg:px-48 lg:my-5 flex justify-between text-center">
           <button className="p-3 m-2 outline outline-emerald-500 rounded-lg relative bg-lime-500 to-right">
-            <a href="/" className="text-2xl">
+            <a href="/about" className="text-2xl">
               About Me
             </a>
           </button>

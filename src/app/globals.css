@@ -17,8 +17,8 @@
 }
 
 body {
-  /*background-color: rgb(7, 89, 133);*/
-  background-image: url("image/main.png");
+  background-color: rgb(21, 50, 212);
+  /*background-image: url("image/main.png");*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
