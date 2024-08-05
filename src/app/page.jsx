@@ -24,10 +24,6 @@ export default function Home() {
             Hello World, My name is Richard.
           </h1>
         </div>
-        {/*
-        <div className="flex justify-center p-3">
-          <Image src={main} alt="main" width="300" height="300" />
-  </div>*/}
         <div className="p-3 m-2 text-center md:text-start">
           <h2 className="text-lg font-bold lg:text-3xl fade-in_2">
             I'm a <span>Full Stack Web Developer</span>
