@@ -16,7 +16,7 @@ const page = () => {
           <div className="float-left w-1/2">
             <h2 className="text-base text-white fade-in_2">
               My name is Richard Jeong, a full stack web application developer
-              and UI/UX designer with a great passion for coding challenges. I
+              and UI designer with a great passion for coding challenges. I
               specialize in building powerful web applications using React.js
               and Next.js for the frontend, and PHP and Python (Flask & Django)
               for the backend, and MySQL and MongoDB for the database. I thrive

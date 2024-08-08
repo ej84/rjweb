@@ -26,9 +26,7 @@ export default function Home() {
         </div>
         <div className="p-3 m-2 text-center md:text-start">
           <h2 className="text-lg font-bold lg:text-3xl fade-in_2">
-            I'm a <span>Full Stack Web Developer</span>
-            and
-            <span> UI/UX Designer.</span>
+            I'm a <span>Full Stack Web Developer.</span>
           </h2>
         </div>
         <div className="px-10 lg:px-48 lg:my-5 flex justify-between text-center">
