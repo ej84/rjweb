@@ -18,13 +18,13 @@ const page = () => {
               My name is Richard Jeong, a full stack web application developer
               and UI designer with a great passion for coding challenges. I
               specialize in building powerful web applications using React.js
-              and Next.js for the frontend, and PHP and Python (Flask & Django)
-              for the backend, and MySQL and MongoDB for the database. I thrive
-              in collaborative environments, and I am committed to improving
-              user experiences through thoughtful and efficient design. I look
-              forward to growing as a developer and tackling new challenges. You
-              can explore my projects on this website, and I'm always open to
-              collaboration and inquiries—feel free to reach out!
+              and Next.js for the frontend, and PHP and Python for the backend,
+              and MySQL and MongoDB for the database. I thrive in collaborative
+              environments, and I am committed to improving user experiences
+              through thoughtful and efficient design. I look forward to growing
+              as a developer and tackling new challenges. You can explore my
+              projects on this website, and I'm always open to collaboration and
+              inquiries—feel free to reach out!
             </h2>
           </div>
           <div className="float-right w-1/2 pl-20">

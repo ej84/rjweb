@@ -17,12 +17,8 @@
 }
 
 body {
-  background-color: rgb(21, 50, 212);
-  /*background-image: url("image/main.png");*/
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: white;
 }
 
 .fade-in {
