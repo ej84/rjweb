@@ -85,19 +85,7 @@ body {
     left: 0;
   }
 }
-/*
-.mouseOn:hover,
-.btnClicked {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-  outline-style: solid;
-  outline-color: yellow;
-}
 
-.portfolioText {
-  color: yellow;
-}
-*/
 @layer utilities {
   .text-balance {
     text-wrap: balance;
