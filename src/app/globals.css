@@ -31,6 +31,14 @@ body {
   animation: fadeIn 1s 1.5s ease-in-out forwards;
 }
 
+.pop:hover {
+  animation: pop 0.2s linear forwards;
+}
+
+.custom-icon {
+  @apply w-9 h-9 text-white;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -40,49 +48,9 @@ body {
   }
 }
 
-.to-left {
-  visibility: hidden;
-  opacity: 0;
-  animation: toLeft 0.5s 2.5s linear forwards;
-}
-
-.to-right {
-  visibility: hidden;
-  opacity: 0;
-  animation: toRight 0.5s 2.5s linear forwards;
-}
-
-@keyframes toLeft {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-    right: -15%;
-  }
-  1% {
-    visibility: visible;
-    opacity: 0;
-  }
+@keyframes pop {
   100% {
-    visibility: visible;
-    opacity: 1;
-    right: 0;
-  }
-}
-
-@keyframes toRight {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-    left: -15%;
-  }
-  1% {
-    visibility: visible;
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-    left: 0;
+    transform: scale(1.4);
   }
 }
 
