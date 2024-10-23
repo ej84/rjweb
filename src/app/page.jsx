@@ -20,7 +20,7 @@ export default function Home() {
       <main className="flex justify-center lg:p-14 text-white h-screen">
         <div className="p-4 m-3 text-center lg:top-20 space-y-5">
           <h1 className="text-3xl lg:text-4xl font-extrabold fade-in">
-            Hello! My name is Richard.
+            My name is Richard.
           </h1>
           {/*</div>
         <div className="p-3 m-2 text-center">*/}
