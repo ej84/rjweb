@@ -19,8 +19,8 @@ export default function Home() {
       <Nav />
       <main className="flex justify-center lg:p-14 text-white h-screen">
         <div className="p-5 m-3 text-center lg:top-20 space-y-5">
-          <div className="mx-28 bg-slate-700 rounded-md ">
-            <h1 className="text-3xl lg:text-4xl font-extrabold fade-in">
+          <div className="mx-28 bg-slate-700 rounded-md fade-in">
+            <h1 className="text-3xl lg:text-4xl font-extrabold">
               My name is Richard.
             </h1>
           </div>
