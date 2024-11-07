@@ -21,7 +21,7 @@ const getIcon = (icon) => {
 
 const Nav = () => {
   return (
-    <nav className="flex justify-center p-3 text-center text-xs md:justify-end md:p-5 md:text-lg font-bold space-x-6 relative right-5">
+    <nav className="flex justify-center p-3 text-center text-xs md:justify-end md:p-5 md:text-lg font-bold space-x-6 relative md:right-5">
       {NavList.map((nav, index) => {
         return (
           <Link
