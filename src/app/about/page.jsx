@@ -1,20 +1,28 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Link from "next/link";
+import Image from "next/image";
+import main from "../image/main.webp";
 
 const page = () => {
   return (
     <>
+      <Image
+        src={main}
+        alt="background-image"
+        fill
+        className="-z-50 fixed top-0 left-0 w-full h-full object-cover"
+      />
       <Nav />
       <main className="flex flex-col justify-center lg:p-14">
-        <div className="p-4 m-3 text-center md:text-start">
-          <h1 className="text-3xl lg:text-5xl font-extrabold fade-in">
+        <div className="p-4 m-3 text-center md:text-start mx-auto bg-slate-700 rounded-md">
+          <h1 className="text-3xl text-white lg:text-5xl font-extrabold fade-in">
             About Me
           </h1>
         </div>
         <div className="p-5 text-center md:text-start">
           <div className="float-left w-1/2">
-            <h2 className="text-base text-black fade-in_2">
+            <h2 className="text-lg text-white p-4 bg-slate-700 rounded-md fade-in_2">
               My name is Richard Jeong, a full stack web application developer
               and UI designer with a great passion for coding challenges and
               many types of web development. I specialize in building powerful
