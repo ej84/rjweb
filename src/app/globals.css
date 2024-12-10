@@ -36,7 +36,7 @@ body {
 }
 
 .custom-icon {
-  @apply w-9 h-9 text-white;
+  @apply w-7 h-7 text-white;
 }
 
 @keyframes fadeIn {
