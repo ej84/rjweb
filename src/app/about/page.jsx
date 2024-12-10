@@ -17,16 +17,15 @@ const page = () => {
       <Nav />
       <main className="flex flex-col justify-center lg:p-8">
         <div className="p-4 m-3 text-center md:text-start mx-auto bg-slate-700 rounded-md">
-          <h1 className="text-3xl text-white lg:text-5xl font-extrabold fade-in">
+          <h1 className="text-2xl text-white lg:text-4xl font-extrabold fade-in">
             About Me
           </h1>
         </div>
         <div className="p-5 text-center md:text-start">
           <div className="float-left w-1/2 relative lg:left-32 xl:left-44">
-            <h2 className="text-lg text-white p-4 bg-slate-700 rounded-md fade-in_2">
-              I am a full stack web application developer and UI/UX designer
-              with a great passion for coding and problem solving skills. I
-              always thrive in collaborative environments, and I am committed to
+            <h2 className="text-base lg:text-lg text-white p-4 bg-slate-700 rounded-md fade-in_2">
+              I am a full stack web developer and UI/UX designer with high
+              passion in coding and problem solving skill. I'm committed to
               improving user experiences through thoughtful and efficient
               design. I look forward to growing as more creative developer and
               having new project challenges!
