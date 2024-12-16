@@ -33,6 +33,9 @@ export default function Home() {
           <h2 className="text-xl font-bold lg:text-3xl fade-in_2 p-1 bg-slate-700 rounded-md">
             I'm a <span>Full Stack Web Developer.</span>
           </h2>
+          <div className="mx-auto md:p-5">
+            <StackBar />
+          </div>
         </div>
       </main>
     </>
