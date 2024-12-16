@@ -61,7 +61,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="mx-auto pt-10">
+        <div className="mx-auto md:pt-10">
           <StackBar />
         </div>
       </main>
