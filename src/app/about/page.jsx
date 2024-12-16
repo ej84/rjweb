@@ -41,7 +41,15 @@ const page = () => {
           </div>
         </div>*/}
         <div className="flex justify-center w-full text-center md:text-start">
-          <div className="grid grid-cols-2 justify-center items-center text-center space-x-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center text-center md:space-x-2">
+            <div className="w-80">
+              <img
+                src="portfolio_picture.jpg"
+                alt="profile"
+                width="320"
+                height="320"
+              />
+            </div>
             <div className="max-w-80">
               <h2 className="text-base lg:text-lg text-white p-4 bg-slate-700 rounded-md fade-in_2">
                 I am a full stack web developer and UI/UX designer with high
@@ -50,14 +58,6 @@ const page = () => {
                 design. I look forward to growing as more creative developer and
                 having new project challenges!
               </h2>
-            </div>
-            <div className="w-80">
-              <img
-                src="portfolio_picture.jpg"
-                alt="profile"
-                width="320"
-                height="320"
-              />
             </div>
           </div>
         </div>
