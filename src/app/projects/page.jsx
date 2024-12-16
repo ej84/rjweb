@@ -14,12 +14,12 @@ const page = () => {
       />
       <Nav />
       <main className="flex flex-col justify-center lg:p-8">
-        <div className="p-4 m-3 text-center mx-auto bg-slate-700 rounded-md">
+        <div className="p-4 m-4 text-center mx-auto bg-slate-700 rounded-md">
           <h1 className="text-2xl text-white md:text-4xl font-extrabold fade-in">
             My Projects
           </h1>
         </div>
-        <div className="p-4 m-6 md:p-12 md:m-12">
+        <div className="p-4 m-6 md:p-10 md:m-10">
           <div className="grid grid-rows-3 md:grid-cols-2 justify-center text-white gap-3 text-center">
             <div className="md:p-10 md:m-4 bg-slate-700 rounded-md space-y-3">
               <a href="https://github.com/ej84/all-converter">
