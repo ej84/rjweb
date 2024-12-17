@@ -8,15 +8,9 @@ import StackBar from "../components/StackBar";
 const page = () => {
   return (
     <>
-      {/*<Image
-        src={main}
-        alt="background-image"
-        fill
-        className="-z-50 fixed top-0 left-0 w-full h-full object-cover"
-      />*/}
       <Nav />
       <main className="flex flex-col justify-center lg:p-8">
-        <div className="p-4 m-3 text-center md:text-start mx-auto bg-slate-700 rounded-md">
+        <div className="m-3 text-center md:text-start mx-auto text-style">
           <h1 className="text-2xl text-white lg:text-4xl font-extrabold fade-in">
             About Me
           </h1>

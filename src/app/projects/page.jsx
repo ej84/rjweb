@@ -7,8 +7,8 @@ const page = () => {
   return (
     <>
       <Nav />
-      <main className="flex flex-col justify-center lg:p-8">
-        <div className="p-4 m-4 text-center mx-auto rounded-md text-style">
+      <main className="flex flex-col justify-center lg:p-7">
+        <div className="p-4 m-3 text-center mx-auto rounded-md text-style">
           <h1 className="text-2xl md:text-4xl font-extrabold fade-in">
             My Projects
           </h1>

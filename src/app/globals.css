@@ -34,7 +34,7 @@ body {
 .text-style {
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-  padding: 4px;
+  padding: 5px;
   border-radius: 0.375rem;
   color: white;
 }
