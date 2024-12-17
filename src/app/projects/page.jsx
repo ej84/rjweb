@@ -6,12 +6,12 @@ import main from "../image/main.webp";
 const page = () => {
   return (
     <>
-      <Image
+      {/*<Image
         src={main}
         alt="background-image"
         fill
         className="-z-50 fixed top-0 left-0 w-full h-full object-cover"
-      />
+      />*/}
       <Nav />
       <main className="flex flex-col justify-center lg:p-8">
         <div className="p-4 m-4 text-center mx-auto bg-slate-700 rounded-md">
