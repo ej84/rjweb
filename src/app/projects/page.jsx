@@ -1,43 +1,61 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Image from "next/image";
-import main from "../image/main.webp";
+import converter from "../image/converter.webp";
 
 const page = () => {
   return (
     <>
-      {/*<Image
-        src={main}
-        alt="background-image"
-        fill
-        className="-z-50 fixed top-0 left-0 w-full h-full object-cover"
-      />*/}
       <Nav />
       <main className="flex flex-col justify-center lg:p-8">
-        <div className="p-4 m-4 text-center mx-auto bg-slate-700 rounded-md">
-          <h1 className="text-2xl text-white md:text-4xl font-extrabold fade-in">
+        <div className="p-4 m-4 text-center mx-auto rounded-md text-style">
+          <h1 className="text-2xl md:text-4xl font-extrabold fade-in">
             My Projects
           </h1>
         </div>
-        <div className="p-4 m-6 md:p-10 md:m-10">
-          <div className="grid grid-rows-3 md:grid-cols-2 justify-center text-white gap-3 text-center">
-            <div className="md:p-10 md:m-4 bg-slate-700 rounded-md space-y-3">
-              <a href="https://github.com/ej84/all-converter">
+        <div className="p-4 m-5 md:p-1 md:m-1">
+          <div className="grid grid-rows-3 md:grid-cols-2 justify-center gap-3 text-center">
+            <div className="">
+              <h2 className="text-style">File Converter Web Application</h2>
+              <div className="md:p-4 md:m-4 text-style space-y-3">
+                <div className="">
+                  <a href="https://github.com/ej84/all-converter">
+                    <Image
+                      src={converter}
+                      alt="file converter"
+                      width={140}
+                      height={200}
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-style">
                 File Converter Web Application Project
-              </a>
-              <p> </p>
+              </h2>
+              <div className="md:p-10 md:m-4 space-y-3 text-style">
+                <a href="https://github.com/ej84/all-converter"></a>
+                <p> </p>
+              </div>
             </div>
-            <div className="md:p-10 md:m-4 bg-slate-700 rounded-md space-y-3">
-              <a href="/">File Converter Web Application Project</a>
-              <p>Summary: </p>
+            <div>
+              <h2 className="text-style">
+                File Converter Web Application Project
+              </h2>
+              <div className="md:p-10 md:m-4 space-y-3 text-style">
+                <a href="https://github.com/ej84/all-converter"></a>
+                <p> </p>
+              </div>
             </div>
-            <div className="md:p-10 md:m-4 bg-slate-700 rounded-md space-y-3">
-              <a href="/">File Converter Web Application Project</a>
-              <p>Summary: </p>
-            </div>
-            <div className="md:p-10 md:m-4 bg-slate-700 rounded-md space-y-3">
-              <a href="/">File Converter Web Application Project</a>
-              <p>Summary: </p>
+            <div>
+              <h2 className="text-style">
+                File Converter Web Application Project
+              </h2>
+              <div className="md:p-10 md:m-4 space-y-3 text-style">
+                <a href="https://github.com/ej84/all-converter"></a>
+                <p> </p>
+              </div>
             </div>
           </div>
         </div>

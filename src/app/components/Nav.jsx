@@ -30,7 +30,7 @@ const Nav = () => {
             className="flex items-center justify-center p-3 bg-slate-700 rounded-lg"
           >
             {getIcon(nav.icon)}
-            <span className="absolute hidden peer-hover:block top-20 text-white">
+            <span className="absolute hidden p-2 peer-hover:block top-20 bg-white text-slate-700 rounded-md">
               {nav.label}
             </span>
           </Link>
