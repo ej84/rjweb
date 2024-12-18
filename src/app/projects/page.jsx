@@ -29,8 +29,8 @@ const page = () => {
                       />
                     </a>
                   </div>
-                  <div className="mt-1 pt-1 md:mt-2 w-full h-40 md:h-36 rounded-md bg-white text-slate-700">
-                    <p className="text-xs md:text-sm lg:text-base">
+                  <div className=" xl:p-5 mt-1 md:mt-1 lg:mt-4 xl:mt-6 w-full h-40 lg:h-36 rounded-md bg-white text-slate-700">
+                    <p className="text-xs p-1 md:p-2 md:text-sm lg:text-base">
                       An online file converter SaaS app that helps edit, modify
                       and create new format files such as image png to webp
                       file, video mp4 to audio mp3, etc.
