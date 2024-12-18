@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "../components/Nav";
 import Image from "next/image";
 import converter from "../image/converter.webp";
+import helpdesk from "../image/helpdesk.webp";
 
 const page = () => {
   return (
@@ -29,7 +30,7 @@ const page = () => {
                       />
                     </a>
                   </div>
-                  <div className=" xl:p-5 mt-1 md:mt-1 lg:mt-4 xl:mt-6 w-full h-40 lg:h-36 rounded-md bg-white text-slate-700">
+                  <div className="xl:p-5 mt-1 md:mt-1 lg:mt-4 xl:mt-6 w-full h-40 lg:h-36 rounded-md bg-white text-slate-700">
                     <p className="text-xs p-2 md:text-sm lg:text-base">
                       An online file converter SaaS app that helps edit, modify
                       and create new format files such as image png to webp
@@ -41,15 +42,32 @@ const page = () => {
             </div>
             <div className="place-items-center">
               <h2 className="text-style">IT HelpDesk Ticketing System</h2>
-              <div className="md:p-10 md:m-4 space-y-3 text-style">
-                <a href="https://github.com/ej84/all-converter"></a>
-                <p> </p>
+              <div className="p-4 m-4 text-style">
+                <div className="flex">
+                  <div className="mt-2 md:pr-2 rounded-md">
+                    <a href="https://github.com/ej84/geneidhelpdesk">
+                      <Image
+                        src={helpdesk}
+                        alt="IT Helpdesk"
+                        width={265}
+                        height={200}
+                      />
+                    </a>
+                  </div>
+                  <div className="xl:p-5 mt-1 md:mt-1 lg:mt-4 xl:mt-6 w-full h-40 lg:h-36 rounded-md bg-white text-slate-700">
+                    <p className="text-xs p-2 md:text-sm lg:text-base">
+                      A currently ongoing project to implement a ticketing
+                      system to enable users to request IT technical issues to
+                      be solved.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="place-items-center">
               <h2 className="text-style">Project 3</h2>
               <div className="md:p-10 md:m-4 space-y-3 text-style">
-                <a href="https://github.com/ej84/all-converter"></a>
+                <a href="https://github.com/ej84/pythonFlaskApp3"></a>
                 <p> </p>
               </div>
             </div>
