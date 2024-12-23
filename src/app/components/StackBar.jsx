@@ -20,23 +20,36 @@ const StackBar = () => {
           height={380}
           className="relative md:left-14 rounded-md mb-5"
         />
-        <div className="flex justify-center p-4 space-x-5 md:space-x-8 bg-slate-700 rounded-md">
-          <Link href="/about" className="w-10 md:w-12 pop">
-            <Image src={html} alt="about_me_btn" />
+        <div className="flex justify-center p-5 space-x-5 md:space-x-8 bg-slate-700 rounded-md">
+          <Link href="/" className="w-10 h-10 md:w-12 md:h-12">
+            <Image src={html} alt="about_me_btn" className="peer pop" />
+            {/*<span className=" hidden peer-hover:block">+ 3 yrs</span>*/}
           </Link>
-          <Link href="/about" className="w-10 md:w-12 pop">
-            <Image src={css} alt="about_me_btn" />
+          <Link href="/" className="w-10 md:w-12">
+            <Image src={css} alt="about_me_btn" className="peer pop" />
           </Link>
-          <Link href="/about" className="flex items-center w-10 md:w-12 pop">
+          <Link
+            href="/"
+            className="flex justify-center items-center w-10 md:w-12 pop"
+          >
             <Image src={javascript} alt="about_me_btn" />
           </Link>
-          <Link href="/about" className="flex items-center w-10 md:w-12 pop">
+          <Link
+            href="/"
+            className="flex justify-center items-center w-10 md:w-12 pop"
+          >
             <Image src={react} alt="about_me_btn" />
           </Link>
-          <Link href="/about" className="flex items-center w-10 md:w-12 pop">
+          <Link
+            href="/"
+            className="flex justify-center items-center w-10 md:w-12 pop"
+          >
             <Image src={python} alt="about_me_btn" />
           </Link>
-          <Link href="/about" className="flex items-center w-10 md:w-12 pop">
+          <Link
+            href="/"
+            className="flex justify-center items-center w-10 md:w-12 pop"
+          >
             <Image src={php} alt="about_me_btn" />
           </Link>
         </div>
