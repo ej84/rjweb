@@ -19,7 +19,7 @@ const page = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center text-center md:space-x-2">
             <div className="w-80">
               <img
-                src="portfolio_picture.jpg"
+                src="portfolio_picture.png"
                 alt="profile"
                 width="320"
                 height="320"
