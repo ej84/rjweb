@@ -21,7 +21,7 @@ export default function Home() {
           <h2 className="text-xl font-bold lg:text-3xl fade-in_2 p-1 bg-slate-700 rounded-md">
             I'm a <span>Full Stack Web Developer and Problem Solver.</span>
           </h2>
-          <div className="p-2">
+          <div className="p-5">
             <StackBar />
           </div>
         </div>

@@ -18,7 +18,7 @@ const StackBar = () => {
           alt="developer"
           width={380}
           height={380}
-          className="relative md:left-14 rounded-md mb-5"
+          className="relative lg:left-36 rounded-md mb-5"
         />
         <div className="flex justify-center p-5 space-x-5 md:space-x-8 bg-slate-700 rounded-md">
           <Link href="/" className="w-10 h-10 md:w-12 md:h-12">
